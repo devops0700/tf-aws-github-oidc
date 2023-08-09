@@ -70,7 +70,7 @@ resource "aws_iam_role_policy_attachment" "github_actions" {
 } */
 
 resource "aws_ecr_repository" "repo" {
-  name                 = "meu/repositorio"
+  name                 = "oidc/tf-aws-github-oidc"
   image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
