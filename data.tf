@@ -20,7 +20,7 @@ data "aws_iam_policy_document" "github_actions_assume_role_policy" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       #values   = ["repo:ismailyenigul/myrepo:*"]
-      values   = ["repo:devops0700/*"]
+      values   = ["repo:devops0700/tf-aws-github-oidc:*"]
     }
     condition {
       test     = "StringEquals"
