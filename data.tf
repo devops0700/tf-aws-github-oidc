@@ -82,6 +82,15 @@ data "aws_iam_policy_document" "github_actions" {
       values = ["true"]
     }    
   }
+
+    # 
+  statement {
+    actions = [
+      "sts:*",  
+      "s3:*",
+    ]
+    resources = ["*"] 
+  }
 }
 
 /* # Redundant
